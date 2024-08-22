@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Air Jordan 1</title>
+    <link rel="shortcut icon" href="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&family=Satisfy&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --sidebgcolor: #040b14;
+    --whitecolor: white;
+    --bgcolor: #f7f7f7;
+    --secbgcolor:#e7e7e7;
+    --thcolor:#7e7e7e;
+
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--bgcolor);
+}
+a{
+    text-decoration: none;
+    color: var(--sidebgcolor);
+}
+button{
+    outline: none;
+    border: none;
+}
+.row{
+    width: 100%;
+}
+input{
+    outline: none;
+}
+.navbar-dark{
+    background-color: var(--thcolor);
+    color: var(--whitecolor);
+}
+.navbar h2{
+    font-family: 'Satisfy', cursive;
+
+}
+.navbar i{
+   font-size: 20px;
+
+}
+.navbar i {
+    scale: 1.1;
+    transition: .3s;
+    rotate: 10deg;
+}
+
+.menu_list{
+    background-color: var(--secbgcolor);
+}
+.menu_list a{
+    font-size: 19px;
+    margin: 0px 10px;
+}
+
+.collapse button{
+    border-bottom: 1px solid var(--sidebgcolor);
+}
+#home{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+#home button {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    color: var(--whitecolor);
+   }
+
+#home button::before,
+#home button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+#home button::before {
+    
+    background: #5e5918;
+   }
+   
+#home button::after {
+    right: -6px;
+    background: #5a189a;
+   }
+  
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    text-align: center;
+    width: 18px;
+    height: 18px;
+  }
+  
+
+#home #slider_2::before {
+    
+    background: #ff6b00;
+   }
+   
+#home #slider_2::after {
+    right: -6px;
+    background: #052bff;
+   }
+#home #slider_3::before {
+    
+    background: #000000;
+   }
+   
+#home #slider_3::after {
+    right: -7px;
+    background: #b4b4b4;
+   }
+   
+#home button::before,
+#home button::after {
+    width: 58%;
+   }
+   
+#home button span {
+    color: #ffffff;
+    transition: 0.3s;
+   }
+   
+#home button span {
+    color: #03045e;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+}
+/*about*/
+#about{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+#about .col-xl-4 {
+    margin-top: 20px;
+}
+#about .col-xl-4 .ab_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#about .col-xl-4 .ab_img img{
+    width: 90%;
+}
+#about h3{
+  
+  margin: 10px 0px;
+}
+#collection{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+#collection .text{
+    margin-bottom: 70px;
+}
+#collection .col-xl-3{
+    padding: 25px;
+    margin: 20px 0px ;
+}
+#collection img {
+    scale: 1.1;
+}
+#collection .coll_img{
+    width: 100%;
+    overflow: hidden;
+}
+#collection .coll_img img{
+    width: 90%;
+    transition: all .3s ease;
+}
+#collection button{
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 10px;
+}
+#collection button {
+    background-color: #e7e7e7;
+}
+#collection button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+#collection button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+#collection button {
+    color: #e8e8e8;
+   }
+   
+#collection button ::before {
+    width: 100%;
+   }
+
+#famous{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+#famous .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#famous .container .row a{
+    color: rgb(41, 41, 88);
+    transition: all .3s ease;
+}
+#famous .container .row a {
+    border-bottom: 1px solid rgb(58, 58, 255);
+    font-size: 18px;
+}
+#famous img{
+    width: 100%;
+}
+#footer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+#footer .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .col-xl-3{
+    margin: 10px 0px;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer ul li{
+    line-height: 2;
+}
+#footer ul li i{
+    margin-right: 5px;
+}
+.copy{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(70, 70, 70);
+    color: #e7e7e7;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+@media (max-width: 768px){
+    #home{
+        text-align: center;
+    }
+    h2{
+      color:rgb(201, 79, 79);
+    }
+}
+@media (max-width: 576px) {
+    .nav{
+        text-align: center;
+    }
+    .nav p{
+        font-size: 18px;
+    }
+    .collapse .menu_list .btn a{
+        font-size: 20px;
+    }
+    nav h2{
+        font-size:18px;
+    }
+    nav .col-3{
+        justify-content: start;
+    }
+    #famous p{
+        font-size: 15px;
+    }
+}
+  </style>
+  <body>
+
+    <div class="nav">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <p>Free shipping for over $100</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Eng
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="index_mm.html">Myanmar</a></li>
+                        </ul>
+                      </div>
+                      <button style="padding: 5px;"><a href="#">Login</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-1">
+            <div class="menu_list d-flex justify-content-center" > 
+                <button class="btn"><a href="#home">Home</a></button>
+                <button class="btn"> <a href="#about">about</a></button>
+                <button class="btn"> <a href="#collection">Products</a></button>
+                <button class="btn"> <a href="#footer">contact</a></button>
+            </div>
+          </div>
+      </div>
+      
+      <nav class="navbar navbar-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: black;"></span>
+                  </button>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
+                    <h2>Sneakers Shop</h2>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3 d-flex align-items-center justify-content-end">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+          
+        </div>
+      </nav>
+      <!--home-->
+      <div id="home">
+        <div class="container">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <div class="car_text">
+                      <h2>Nike Jordan 1 Travis Scott Olive</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi?</p>
+                      <button id="slider_1" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button id="slider_1"><span class="text-white"> View more</span></button>
+
+                      <button id="slider_1" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+                    <img style="width: 90%;" src="https://crepdogcrew.com/cdn/shop/files/Travis_scott_low_og_olive_3_by_4_2x_28a59744-800a-42e5-a4eb-9051a2a51086_800x.jpg?v=1682489383" alt=""></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <div class="car_text">
+                      <h2>New Arrivals</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi?</p>
+                      <button id="slider_2" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button id="slider_2"><span class="text-white"> View more</span></button>
+
+                      <button id="slider_2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+                    <img style="width: 90%;" src="https://crepdogcrew.com/cdn/shop/products/JORDAN1RETROHIGHDARKMOCHA3_1024x.jpg?v=1673709364" alt=""></div>
+                </div>
+                
+              
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <div class="car_text">
+                      <h2>New Arrivals</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi?</p>
+                      <button id="slider_3" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button id="slider_3"><span class="text-white"> View more</span></button>
+
+                      <button id="slider_3" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+                    <img style="width: 90%;" src="https://crepdogcrew.com/cdn/shop/products/AIRJORDAN1RETROHIGHOGUniversityBlue3BY4_800x.jpg?v=1680252294" alt=""></div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!--about-->
+      <div id="about">
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div class="ab_img">
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F10%2Fair-jordan-1-high-og-rebellionaire-closer-look-release-info-555088-036-001.jpg?cbr=1&q=90" alt="">
+              </div>
+              <div class="ab_text">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veritatis!</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div class="ab_img">
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2015%2F06%2F4-things-you-should-know-about-the-air-jordan-1-4.jpg?w=960&cbr=1&q=90&fit=max" alt="">
+              </div>
+              <div class="ab_text">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veritatis!</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="ab_img">
+                <img src="https://sneakernews.com/wp-content/uploads/2018/12/air-jordan-1-not-for-resale-euro-3.jpg" alt="">
+              </div>
+              <div class="ab_text">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veritatis!</p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      <!--collection-->
+      <div id="collection">
+        <div class="container">
+          <div class="text">
+            <h1>Our collections</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident obcaecati pariatur delectus nihil accusantium ipsa corrupti eligendi reiciendis totam quo ab temporibus, fugit alias, minus rerum ea eum. Voluptatibus?</p>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://s1.dswcdn.com/uploads/Nike_Air_Jordan_Shoes/Air_Jordan_I_1_Shoes/Air_Jordan_I_High/Air_Jordan_1_Retro_High_Og_Gs_Shadow_Soft_Black_Grey_575441-014.jpg" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/315865/1.jpg" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zffNtqGcL-VaE4oLaJIEdcTXI_7MBj4obtLtcOvVgfChTO60kGBLgd4AwSf7lR9h_vI&usqp=CAU" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-itzDQDvIy2L8Lg0fSZnCgXi11l-80MBZuQ&usqp=CAU" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>$300.oo</p>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href=""></a>
+              <div class="coll_img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4704ba44-0d65-41dc-bd5b-57bfcf5f7b14/air-jordan-1-mid-mens-shoes-b3js2D.png" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c3dead19-8a8f-42b7-8de7-d56cc9d8550f/air-jordan-1-zoom-cmft-2-shoes-0crptJ.png" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3e44d089-d158-47d8-9c48-3f4a05fbfaa6/air-jordan-1-low-se-older-shoes-9gnTPd.png" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"><a href="">
+              <div class="coll_img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6361f8ae-edc4-4db5-8ea4-a43cf02f4222/air-jordan-1-elevate-high-shoes-25zlmT.png" alt="">
+              </div>
+              <h3>Shoes name</h3>
+              <div class="stars" style="color:yellow">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>$300.oo</p></a>
+          </div>
+        </div>
+        <button>View More</button>
+      </div>
+    </div>
+
+      <!--about section-->
+      <div id="famous">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="text">
+                <h3>For My Kitty</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam incidunt dolorem consequuntur sint recusandae ex ducimus ab tempora, voluptatibus aperiam nesciunt reprehenderit. Quasi, blanditiis ex vel similique cum aliquam culpa!</p>
+                <a href="">View more</a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <img src="https://cdn.restocks.net/cdn-cgi/image/width=1000/storage/images/products/AA3834-101/2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <ul>
+            <li><h4>Company</h4></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Our Products</a></li>
+            <li><a href="#famous">Best-seller</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <ul>
+            <li><h4>Help</h4></li>
+            <li>Contact us</li>
+            <li>Help</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <ul>
+            <li><h4>Social Media</h4></li>
+            <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+            <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+          <ul>
+            <li><h4>Contact Us</h4></li>
+            <li>120street, Hlaing, Yangon</li>
+            <li>Phone-0976039234</li>
+            <li>Email:sneaker@gmail.com</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    <p>Copyright - 2023 sneaker team</p>
+  </div>
+    <script>
+
+      let a = 12;
+      let b = 24;
+      let result = a + b;
+
+      
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
